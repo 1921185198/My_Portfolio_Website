@@ -10,11 +10,9 @@
 <body>
     <!-- Home Page -->
     <div id="header">
-    <div class="image-container">
-        <img src="./1.png" alt="Suresh Dharavath">
-    </div>
-
-    <div id="header">
+        <div class="image-container">
+            <img src="./1.png" alt="Suresh Dharavath">
+        </div>
         <div class="container">
             <nav>
                 <h1 id="logo"><span>Suresh</span> Dharavath</h1>
@@ -23,35 +21,14 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#project">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <i class="fa-solid fa-xmark"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars"></i>
             </nav>
             <div id="header-style">
                 <h1>Hi, I'm <span id="span1">Suresh</span><br><span id="span2"></span></h1>
-                <p> Architecting and refining resilient data pipelines leveraging Snowflake, Azure Databricks, Python, SQL, ETL, and Airflow <br>
-                    to ensure seamless data processing and timely, high-quality deliverables </p>
+                <p>Architecting and refining resilient data pipelines leveraging Snowflake, Azure Databricks, Python, SQL, ETL, and Airflow</p>
             </div>
-        </div>
-        <div class="buttons">
-            <button id="first">Hire me</button>
-            <button id="second"> <a href="./Suresh_Dharavath_Resume (1).pdf" download class="secondbtn">Download CV &#128196</a></button>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/suresh-d-data-engineer444/" target="_blank" class="icon">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com" target="_blank" class="icon">
-                <i class="fab fa-github"></i>
-            </a>
-
-            <a href="https://smile.com" target="_blank" class="icon">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-
-            <a href="https://www.facebook.com" target="_blank" class="icon">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
         </div>
     </div>
     
@@ -153,42 +130,33 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed("#span2",{
-
-            strings: ["Data Engineer","Snowflake Developer"],
+        var typed = new Typed("#span2", {
+            strings: ["Data Engineer", "Snowflake Developer"],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true
-        })
+        });
     </script>
-        <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var sidemenu = document.getElementById("sidemenu");
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var sidemenu = document.getElementById("sidemenu");
+            var openMenuBtn = document.querySelector(".fa-bars");
+            var closeMenuBtn = document.querySelector(".fa-xmark");
 
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
 
-        function closemenu() {
-            sidemenu.style.right = "-250px";  /* Increased width for better visibility */
-        }
+            function closemenu() {
+                sidemenu.style.right = "-250px";
+            }
 
-        document.querySelector(".fa-bars").addEventListener("click", openmenu);
-        document.querySelector(".fa-xmark").addEventListener("click", closemenu);
-    });
-</script>
-<!--     <script>
-        var sidemeu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemeu.style.right = "0";
-        }
-        function closemenu(){
-            sidemeu.style.right = "-130px";
-        }
+            if (openMenuBtn) openMenuBtn.addEventListener("click", openmenu);
+            if (closeMenuBtn) closeMenuBtn.addEventListener("click", closemenu);
+        });
     </script>
-    <script src="./index.js"></script> -->
 </body>
 </html>
+
 
 
