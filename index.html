@@ -161,7 +161,23 @@
             loop: true
         })
     </script>
-    <script>
+        <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-250px";  /* Increased width for better visibility */
+        }
+
+        document.querySelector(".fa-bars").addEventListener("click", openmenu);
+        document.querySelector(".fa-xmark").addEventListener("click", closemenu);
+    });
+</script>
+<!--     <script>
         var sidemeu = document.getElementById("sidemenu");
 
         function openmenu(){
@@ -171,6 +187,8 @@
             sidemeu.style.right = "-130px";
         }
     </script>
-    <script src="./index.js"></script>
+    <script src="./index.js"></script> -->
 </body>
 </html>
+
+
