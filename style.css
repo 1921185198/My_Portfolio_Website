@@ -389,4 +389,59 @@ form input, form textarea{
         height: 120px;
         top: 10px; /* Reduce top margin */
     }
+    #header-style{
+        margin-top: 100%;
+        font-size: 12px;
+    }
+    #header-style p{
+        font-size: 15px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #008080;
+        position: fixed;
+        top: 0;
+        right: -130px;
+        width: 130px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 23px;
+        cursor: pointer;
+    }
+    .buttons{
+        margin-left:25px ;
+        margin-top: 5px;
+    }
+    .social-icons{
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+    .about-col-1{
+        margin-top: -80px;
+        flex-basis: 50%;
+    }
+    .about-col-2{
+        margin-top: -80px;
+        flex-basis: 45%;
+    }
+    .content-left, .content-right{
+        flex-basis: 100%;
+    }
+    .content-right{
+        margin-left: -15px;
+    }
 }
