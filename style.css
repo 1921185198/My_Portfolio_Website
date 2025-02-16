@@ -363,7 +363,7 @@ form input, form textarea{
  /* Centering the circular image inside the header */
 .image-container {
     position: absolute;
-    top: 60px;  /* Adjust vertical positioning */
+    top: 100px;  /* Adjust vertical positioning */
     left: 50%;
     transform: translateX(-50%);
     width: 150px; /* Circle size */
